@@ -147,7 +147,7 @@ p{margin:.5em 0}
 .clue{padding:10px 12px;margin:6px 0;font-size:14px;background:var(--sheet);border-radius:12px;border:1px solid var(--rule2)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 @media(max-width:560px){.hd{gap:8px;padding:8px 12px 10px}.mt{padding:2px 6px 2px 2px;gap:4px}.mt .dots i{width:5px;height:5px}.hd-nb{padding:5px 10px}}
-@media(hover:none){.ch kbd{display:none}}
+@media(hover:none),(pointer:coarse){.ch kbd,.kbd-hint{display:none}}
 .mt .tv{display:none;font:700 12px Inter;color:var(--ink)}
 @media(max-width:560px){.mt .dots{display:none}.mt .tv{display:inline}.mt{padding:2px 8px 2px 2px}.mt.tn{padding-left:8px}.hd-meters{justify-content:flex-start;gap:4px}}
 /* v3 — иконки и открытые секции */
@@ -177,3 +177,11 @@ p{margin:.5em 0}
 .flip .b .ib{float:right}
 @media(max-width:560px){.mt .gauge{display:none}.nbt{display:none}.vig{height:96px}.vig .vb{width:56px;height:56px;left:16px;top:20px}.vig .vs .ic{width:64px;height:64px}}
 .opory{align-items:start}
+.scene-h .num{display:inline-grid;place-items:center;min-width:64px;height:64px;padding:0 14px;border-radius:20px;background:var(--cc);color:var(--c);-webkit-text-fill-color:currentColor;font:800 30px/1 Manrope;letter-spacing:.02em}
+.scene-h .num::before{content:"Сцена";display:block;font:700 10px Inter;letter-spacing:.14em;text-transform:uppercase;margin-bottom:2px}
+.scene-h .num.fin::before{content:"Итог"}
+.scene-h .num{flex-direction:column}
+.ch:focus-visible,.o:focus-visible,.op:focus-visible{outline-offset:2px}
+.what,.hyp,.turn{scroll-margin-top:96px}
+.scene-h .num{-webkit-background-clip:border-box;background-clip:border-box}
+.hd-nb{min-height:40px}.ch{min-height:48px}.btn{min-height:48px}
