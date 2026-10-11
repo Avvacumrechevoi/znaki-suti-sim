@@ -149,3 +149,4 @@ p{margin:.5em 0}
 .clue{padding:10px 12px;margin:6px 0;font-size:14px;background:var(--sheet);border-radius:12px;border:1px solid var(--rule2)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 @media(max-width:560px){.hd{gap:8px;padding:8px 12px 10px}.mt{padding:2px 6px 2px 2px;gap:4px}.mt .dots i{width:5px;height:5px}.hd-nb{padding:5px 10px}}
+@media(hover:none){.ch kbd{display:none}}
