@@ -1,9 +1,10 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Знаки сути · Симулятор · Обычная пятница</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<title>Знаки сути · Симулятор</title><meta name="theme-color" content="#F5F4F0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='14' y='2' width='4' height='28' rx='2' fill='%231D63C4'/%3E%3Crect x='2' y='14' width='28' height='4' rx='2' fill='%23B13A0A'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%236A3FC4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="core/tokeny.css"><link rel="stylesheet" href="sim.css"></head>
-<body><header class="hd"><a class="hd-back" href="#">← Знаки сути</a><span class="hd-t" id="hdT">Обычная пятница</span>
-<button class="hd-nb" id="nbBtn" type="button">Блокнот <b id="nbN">0</b></button>
-<div class="hd-meters" id="meters"></div><div class="hd-bar"><i id="bar"></i></div></header>
-<aside class="nb" id="nb" hidden><div class="nb-in"><div class="nb-h">Блокнот улик<button id="nbX" type="button">✕</button></div><div id="nbL"></div></div></aside>
+<body data-tone="none"><div class="bgl" aria-hidden="true"></div>
+<header class="hd"><a class="hd-back" href="#">← Знаки сути</a><div class="hd-meters" id="meters" aria-live="polite"></div>
+<button class="hd-nb" id="nbBtn" type="button" aria-haspopup="dialog">Блокнот <b id="nbN">0</b></button><div class="hd-bar" role="progressbar" aria-label="Прогресс урока"><i id="bar"></i></div></header>
+<aside class="nb" id="nb" hidden role="dialog" aria-label="Блокнот улик"><div class="nb-in"><div class="nb-h"><span>Блокнот улик</span><button id="nbX" type="button" aria-label="Закрыть">✕</button></div><p class="nb-tip">Нажимай на подчёркнутые фразы в репликах — так улики попадают сюда.</p><div id="nbL"></div></div></aside>
 <main id="app" class="col"></main><script src="engine.js"></script></body></html>
